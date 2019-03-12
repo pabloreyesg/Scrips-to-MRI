@@ -1,4 +1,8 @@
 #!/bin/bash
+#Author: Pablo Reyes
+#email: pabloreyesg@gmail.com
+
+
 #script to convert images from Dicom to nifti with dcm2nii
 #requieres dcm2nii sudo apt-get install dcm2nii
 #new version requieres dcm2niix

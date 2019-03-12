@@ -1,4 +1,9 @@
 #!/bin/bash
+
+#Author: Pablo Reyes
+#email: pabloreyesg@gmail.com
+
+
 #this script works to uncompress (each) dicom images, the output are dicom uncompressed
 #please, merge all images i a zip file.
 #specify pathraw - place with images compressed
