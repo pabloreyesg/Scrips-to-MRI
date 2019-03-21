@@ -1,7 +1,12 @@
 
-#Resample or resize with FSL, the normal resample uses trilinear which add an smooth over the images, in order to avoid this, I like nearestneighbour interpolation, the command inline to all images is:
+# Standard Orientation
+Some scanners and acquisition are non standard space (non RPI space, like LIP and stuff like that).
+fslreorient2std
 
-for f in s*; do flirt -in $f -ref $f -out r$f -applyisoxfm 1 -interp nearestneighbour; done
+# Resample 
+resample or resize with FSL, the normal resample uses trilinear which add an smooth over the images, in order to avoid this, I like nearestneighbour interpolation, the command inline to all images is:
+
+for f in *; do flirt -in $f -ref $f -out r$f -applyisoxfm 1 -interp nearestneighbour; done
 
 
 # dcm2nii_conversions
