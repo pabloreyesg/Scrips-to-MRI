@@ -8,6 +8,8 @@ resample or resize with FSL, the normal resample uses trilinear which add an smo
 
 for f in *; do flirt -in $f -ref $f -out r$f -applyisoxfm 1 -interp nearestneighbour; done
 
+# N4bias
+for f in rf*; do N4BiasFieldCorrection -d 3 -i $f -o n$f -V; done
 
 # dcm2nii_conversions
 Scripts to convert and reorder images
