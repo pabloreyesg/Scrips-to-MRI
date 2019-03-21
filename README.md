@@ -13,6 +13,12 @@ To correct low frequency intensity non-uniformity, Use ANTs
 
 for f in *; do N4BiasFieldCorrection -d 3 -i $f -o n$f -v; done
 
+# Denoise
+in some cases in mages with noise I prefer DenoiseImage from ANTs
+
+for f in *; do DenoiseImage -d 3 -i $f -o d$f -v -n Rician; done
+
+
 # dcm2nii_conversions
 Scripts to convert and reorder images
 This page provides some script to manipulate dicom images.
