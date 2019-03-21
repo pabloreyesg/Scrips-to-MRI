@@ -11,7 +11,7 @@ for f in *; do flirt -in $f -ref $f -out r$f -applyisoxfm 1 -interp nearestneigh
 # N4bias
 To correct low frequency intensity non-uniformity, Use ANTs
 
-for f in rf*; do N4BiasFieldCorrection -d 3 -i $f -o n$f -v; done
+for f in *; do N4BiasFieldCorrection -d 3 -i $f -o n$f -v; done
 
 # dcm2nii_conversions
 Scripts to convert and reorder images
