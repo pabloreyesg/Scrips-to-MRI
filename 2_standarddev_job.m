@@ -1,3 +1,5 @@
+% Pablo Reyes 1th step to w-scores
+% info pabloreyesg@gmail.com
 %-----------------------------------------------------------------------
 % Incluir los residuales de solamente los sujetos NORMALES, 
 %-----------------------------------------------------------------------
