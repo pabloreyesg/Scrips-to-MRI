@@ -1,3 +1,5 @@
+% Pablo Reyes 1th step to w-scores
+% info pabloreyesg@gmail.com
 %-----------------------------------------------------------------------
 % En este ejemplo se debe reemplazar la imagen i1 y que vendria siendo la del paciente,
 % se deben cambiar los valores para cada sujeto dado que no esta en loop, esta es la verision manual
