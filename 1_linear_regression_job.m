@@ -1,3 +1,5 @@
+% Pablo Reyes 1th step to w-scores
+%
 %-----------------------------------------------------------------------
 % Linear_regression with AGE, especificar todas las imagenes ya suavizadas que salen del VBM se incluyen unicamente controles
 %-----------------------------------------------------------------------
