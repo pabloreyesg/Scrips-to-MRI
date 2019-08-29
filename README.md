@@ -3,6 +3,9 @@
 Some scanners and acquisition are non standard space (non RPI space, like LIP and stuff like that).
 fslreorient2std
 
+for f in nr*; do fslreorient2std $f r$f ; done
+
+
 # Resample 
 resample or resize with FSL, the normal resample uses trilinear which add an smooth over the images, in order to avoid this, I like nearestneighbour interpolation, the command inline to all images is:
 
