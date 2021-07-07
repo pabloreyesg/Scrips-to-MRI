@@ -8,12 +8,14 @@ Toda la información sobre la instalación y uso se puede encontrar en la siguie
 Para el siguiente tutorial se ejemplificará el uso de BIDScoin 
 
 ### Requisitos (en windows)
+
 - ANACONDA
 	- BIDScoin
 	- dcm2niix
 
 ### Pasos 
-1. Instalación de librerías
+
+ - Instalación de librerías
 
 En windows por medio de la consola de ANACONDA (prompt)
 
@@ -26,14 +28,15 @@ En linux
 pip install bidscoin
 apt install dcm2niix
 ```
-3. Descomprimir archivos tar.gz o ZIP. Dependerá del sistema de compresión que se use para compartir el participante.
-4. Organizar folders en version serie/folder
-	1. Utilizar la opción de `-e .dcm` para que la extensión sea siempre en minúscula
+
+ - Descomprimir archivos tar.gz o ZIP. Dependerá del sistema de compresión que se use para compartir el participante.
+ - Organizar folders en version serie/folder
+	- Utilizar la opción de `-e .dcm` para que la extensión sea siempre en minúscula
 ```console
 dicomsort [folder de paciente] -e .dcm
 ```
-4. Renombrar carpeta con prefijo sub- y borrar folder DICOM y DICOMDIR
-5. Generar el archivo yaml que será el template para todo el proyecto. Solo se genera un archivo para todo el proyecto teniendo en cuenta que solo si se cambian los valores de adquisición i.e el nombre de secuencia de T1TFE a T13dTFE se deberá cambiar este archivo yaml.
+ - Renombrar carpeta con prefijo sub- y borrar folder DICOM y DICOMDIR
+ - Generar el archivo yaml que será el template para todo el proyecto. Solo se genera un archivo para todo el proyecto teniendo en cuenta que solo si se cambian los valores de adquisición i.e el nombre de secuencia de T1TFE a T13dTFE se deberá cambiar este archivo yaml.
 
 ```console
 bidsmapper rawfolder BIDSfolder 
