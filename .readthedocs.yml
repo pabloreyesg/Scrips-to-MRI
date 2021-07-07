@@ -7,10 +7,3 @@ version: 2
 
 mkdocs:
   configuration: mkdocs.yml
-
-docs/
-    index.md
-    about.md
-    license.md
-    img/
-    
