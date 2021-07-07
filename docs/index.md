@@ -1,13 +1,15 @@
 # DICOM y BIDS conversion
 
 ## Importación DICOM y anonimización
+Para anonimizar archivos dicom es recomendable usar dicomcleaner de pixelmed. Se puede usar en cualquier sistema operativo y tiene interfaz gráfica. Por otra parte dicomcleaner permite importar archivos desde un CD y desde el servidor PACS que aloja las imágenes dicom en una institución.
 
+![dicomclean](img/dicomclean.png)
 
-### PACS
-
+### Desde el PACS
+Pasos para anonimizar
 - Usar Dicomcleaner de pixelmed
-- Conectarse al PACS (servidor) HUSIPACS
-- Buscar por cédula comenzando con *
+- Conectarse al PACS (servidor)
+- Buscar por ID comenzando con *
 - Realizar Query (Consultar)
 - Darle a Retrieve (Recuperar)
 - Hacer Clean (Limpiar) - Checar opciones de anonimización
@@ -15,8 +17,8 @@
 	- Con nombre como backup para pacientes
 	- Anonimizado para investigación
 
-### DVD CD USB
-
+### Desde DVD CD USB
+Pasos para anonimizar
 - Usar Dicomcleaner de pixelmed
 - Insertar DVD o CD
 - Importar carpeta (import)
