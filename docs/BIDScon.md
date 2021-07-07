@@ -42,10 +42,12 @@ dicomsort [folder de paciente] -e .dcm
  - Renombrar carpeta con prefijo sub- y borrar folder DICOM y DICOMDIR
  - Generar el archivo yaml que será el template para todo el proyecto. Solo se genera un archivo para todo el proyecto teniendo en cuenta que solo si se cambian los valores de adquisición i.e el nombre de secuencia de T1TFE a T13dTFE se deberá cambiar este archivo yaml.
 
+
 ```console
 bidsmapper rawfolder BIDSfolder 
 ```
-El resultado es un archivo yaml
+
+El resultado es un archivo yaml que si bien podria editarlo con un notepad, lo recomendable es usar el aplicativo BIDSeditor
 
  - Con el archivo YAML creado es posible editarlo con `bidseditor` para adaptarlo al sitio del proyecto o institución. Tenga en cuenta que este archivo YAML solo servirá para su institución.
  - Editar el archivo YAML para renombrar y organizar los archivos que requiere su proyecto.
@@ -57,3 +59,6 @@ bidseditor BIDSfolder -b bidsmap.yaml
 Example:
 bidseditor BIDS -b BIDS\code\bidscoin\bidsmap.yaml
 ```
+
+![editor](img/bidscoin_editor.png)
+
