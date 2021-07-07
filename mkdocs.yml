@@ -22,3 +22,7 @@ nav:
     - About: about.md
 
 theme: readthedocs
+
+# Optionally build your docs in additional formats such as PDF
+formats: all
+  
