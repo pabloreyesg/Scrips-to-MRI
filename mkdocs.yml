@@ -3,26 +3,21 @@
 # See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
 
 # Required
-version: 2
 
-mkdocs:
-  configuration: mkdocs.yml
 
-# Optionally set the version of Python and requirements required to build your docs
-python:
-   version: 3.7
-   install:
-   - requirements: docs/requirements.txt
-   
-site_name: DICOM y BIDS conversion
-site_url: https://example.com/
+site_name: Dicom conversion
+repo_url: https://github.com/pabloreyesg/Scrips-to-MRI
+site_url: https://github.com/pabloreyesg/Scrips-to-MRI/blob/master/docs/index.md
+site_author: Pablo Reyes
+copyright: © Pablo Reyes
+
+
+theme: readthedocs
 
 nav:
     - Home: index.md
     - About: about.md
 
-theme: readthedocs
-
-# Optionally build your docs in additional formats such as PDF
-formats: all
-  
+markdown_extensions:
+    - toc:
+        permalink: True
