@@ -4,13 +4,11 @@
 
 # Required
 
-
 site_name: Dicom conversion
 repo_url: https://github.com/pabloreyesg/Scrips-to-MRI
 site_url: https://github.com/pabloreyesg/Scrips-to-MRI/blob/master/docs/index.md
 site_author: Pablo Reyes
 copyright: © Pablo Reyes
-
 
 theme: readthedocs
 
