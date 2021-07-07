@@ -5,7 +5,10 @@ La conversión a formatos BIDS requiere la elaboración de una plantilla inicial
 Toda la información sobre la instalación y uso se puede encontrar en la siguiente página.
 [https://bidscoin.readthedocs.io/en/stable/](https://bidscoin.readthedocs.io/en/stable/)
 
-Para el siguiente tutorial se ejemplificará el uso de BIDScoin 
+Para el siguiente tutorial se ejemplificará el uso de BIDScoin
+En la figura se ilustra un ejemplo de un archivo DICOM a un archivo BIDS
+
+![Bids Format](img/bidsformat.png)
 
 ### Requisitos (en windows)
 
@@ -24,6 +27,7 @@ pip install bidscoin
 conda install -c conda-forge dcm2niix
 ```
 En linux
+
 ```console
 pip install bidscoin
 apt install dcm2niix
@@ -43,10 +47,11 @@ bidsmapper rawfolder BIDSfolder
 ```
 El resultado es un archivo yaml
 
-6. Con el archivo YAML creado es posible editarlo con `bidseditor` para adaptarlo al sitio del proyecto o institución. Tenga en cuenta que este archivo YAML solo servirá para su institución.
-7. Editar el archivo YAML para renombrar y organizar los archivos que requiere su proyecto.
-7.1 Para el siguiente ejemplo se tendran en cuenta 5 secuencias: T1, T2, SWI, fMRI, DTI
-7.2 Inicie `bidseditor` para cambiar las especificaciones de YAML 
+ - Con el archivo YAML creado es posible editarlo con `bidseditor` para adaptarlo al sitio del proyecto o institución. Tenga en cuenta que este archivo YAML solo servirá para su institución.
+ - Editar el archivo YAML para renombrar y organizar los archivos que requiere su proyecto.
+   - Para el siguiente ejemplo se tendran en cuenta 5 secuencias: T1, T2, SWI, fMRI, DTI
+   - Inicie `bidseditor` para cambiar las especificaciones de YAML 
+   
 ```console 
 bidseditor BIDSfolder -b bidsmap.yaml
 Example:
