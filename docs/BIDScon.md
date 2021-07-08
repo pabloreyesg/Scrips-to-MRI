@@ -48,7 +48,7 @@ dicomsort original
 ```
 ---
 
-Dicomsort requiere pydicom por encima de la versión 2. En Linux pueden ocurrir errores por la versión de pydicom. Si estos errores persisten use dicomsorter que es un paquete similar y mucho mas robusto. Dicomsorter no hace parte de las librerías instaladas por BIDScoin y por ello se debe 
+Dicomsort requiere pydicom por encima de la versión 2. En Linux pueden ocurrir errores por la versión de pydicom. Si estos errores persisten use dicomsorter que es un paquete similar y mucho mas robusto. Dicomsorter no hace parte de las librerías instaladas por BIDScoin y por ello se debe instalar.
 
 ```console
 pip install dicomsorter
@@ -65,8 +65,7 @@ dicomsorter original sub-001
 
  - Si ha usado `dicomsort` se requiere renombrar la carpeta original con prefijo **sub-** y borrar el folder DICOM y DICOMDIR. Si ha usado `dicomsorter` el ordenamiento ha requerido un carpeta de salida.
  - Para que `bidscoin` funcione sobre la carpeta raw, ésta debe contener al menos una subcarpeta que comience con **sub-** sino se haya una subcarpeta **sub-xxx** el sistema parará. En formatos **BIDS** los sujetos comienzan siempre con el prefijo **sub-**. Este paso se requiere para todos los casos.
- - El siguiente paso solo requiere ser hecho una vez y es la generación del archivo yaml que será el template para todo el proyecto. Solo si se cambian los valores de adquisición i.e el nombre de secuencia de T1TFE a T13dTFE se deberá cambiar este archivo yaml. Para poder hacer un archivo template se requiere usar `bisdmapper`, el cual a partir del archivo dicom buscará los nombres de las series y les asignará un nuevo nombre en formato BIDS.
-
+ - El siguiente paso solo requiere ser hecho una vez y es la generación del archivo yaml que será el template para todo el proyecto. Solo si se cambian los valores de adquisición i.e el nombre de secuencia de T1TFE a T13dTFE se deberá cambiar este archivo yaml. Para poder hacer un archivo template se requiere usar `bisdmapper`, el cual a partir del archivo dicom buscará los nombres de las series y les asignará un nuevo nombre en formato BIDS. Guarde el archivo en la carpeta BIDS.
 
 ```console
 bidsmapper rawfolder BIDSfolder 
@@ -74,18 +73,33 @@ bidsmapper rawfolder BIDSfolder
 bidsmapper raw BIDS
 ```
 
-El resultado es un archivo yaml que si bien podria editarlo con un notepad, lo recomendable es usar el aplicativo BIDSeditor
+El resultado es un archivo yaml que si bien podria editarlo con un notepad, lo recomendable es usar el aplicativo `BIDSeditor`
 
  - Con el archivo YAML creado es posible editarlo con `bidseditor` para adaptarlo al sitio del proyecto o institución. Tenga en cuenta que este archivo YAML solo servirá para su institución.
  - Editar el archivo YAML para renombrar y organizar los archivos que requiere su proyecto.
-   - Para el siguiente ejemplo se tendran en cuenta 5 secuencias: T1, T2, SWI, fMRI, DTI
    - Inicie `bidseditor` para cambiar las especificaciones de YAML 
    
 ```console 
-bidseditor BIDSfolder -b bidsmap.yaml
-Example:
-bidseditor BIDS -b BIDS\code\bidscoin\bidsmap.yaml
+bidseditor -b bidsmap.yaml [bidsfolder]
+## Example:
+bidseditor -b BIDS\code\bidscoin\bidsmap.yaml bids
 ```
 
 ![editor](img/bidscoin_editor.png)
 
+
+ - En la sección de *action* edite los archivos que requiere para su investigación, recuerde que BIDS requiere que las secuencuas estructurales queden en un folder *anat*, las funciones en *func* y las de difusion en *dwi*. Puede consultar el estandar en la página principal de [BIDS](https://bids-specification.readthedocs.io/en/v1.6.0/).
+ - En verde es posible que el sistema reconozca algunos archivos y los intente renombrar; sin embargo, revise qué tipo de archivos requiere usted para su investigación. Los archivos que no necesite, serán almacenados en una subcarpeta denominada `extra_data`.
+
+![editor](img/bidseditor.png)
+
+ - Con el editor usted podrá, determinar las características básicas del nombre del archivo. Los mínimos requisitos son el tipo de dato y el sufijo. El resto de variables son opcionales. Guarde nuevamente o sobreescriba el archivo YAML.
+ - Finalmente el paso que viene es la conversión dicom a nifti para ello puede usar el comando `bidscoiner`. Si observa que no hay conversión, revise nuevamente el archivos yaml con bidseditor y modifique en opciones la sección "module add dcm2niix" a "dcm2niix".
+ - El sistema Bidscoin funciona directamente sobre la carpeta raw en la que se encuentran los sujetos. Dado que los sujetos se identifican son sub-XXX, usted debe introducir el código de cada uno y el sistema convertirá automaticamente los sujetos. Recuerde que no debería cambiar los parámetros de adquisición de las imágenes.
+
+```console
+bidscoiner [sujeto] [archivo yaml] [forlder de sujetos] [folder BIDS] 
+## Example
+bidscoiner -p sub-001 -b bids/code/bidscoin/bidsmap.yaml raw/ bids/
+```
+Una vez que haya realizado la primera conversión, verifique con [BIDSvalidator](https://bids-standard.github.io/bids-validator/) que se cumplen los requisitos del formato. Si tiene errores graves, modifique nuevamente el archivo YAML. Si no requiere archivos del extra_data puede borrarlos, pero conserve igualmente una copia original. 
