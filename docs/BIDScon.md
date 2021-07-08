@@ -88,7 +88,7 @@ bidseditor -b BIDS\code\bidscoin\bidsmap.yaml bids
 ![editor](img/bidscoin_editor.png)
 
 
- - En la sección de *action* edite los archivos que requiere para su investigación, recuerde que BIDS requiere que las secuencuas estructurales queden en un folder *anat*, las funciones en *func* y las de difusion en *dwi*. Puede consultar el estandar en la página principal de [BIDS](https://bids-specification.readthedocs.io/en/v1.6.0/).
+ - En la sección de *action* edite los archivos que requiere para su investigación, recuerde que BIDS requiere que las secuencuas estructurales queden en un folder *anat*, las funcionales en *func* y las de difusion en *dwi*. Puede consultar el estandar en la página principal de [BIDS](https://bids-specification.readthedocs.io/en/v1.6.0/).
  - En verde es posible que el sistema reconozca algunos archivos y los intente renombrar; sin embargo, revise qué tipo de archivos requiere usted para su investigación. Los archivos que no necesite, serán almacenados en una subcarpeta denominada `extra_data`.
 
 ![editor](img/bidseditor.png)
