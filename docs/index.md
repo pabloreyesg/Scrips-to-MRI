@@ -33,9 +33,14 @@ Es recomendable que para el intercambio de imágenes se usen formatos comprimido
 
 ***Videotutorial***
 
-En el siguiente video tutorial se muestran elmentos que explican los anteriores pasos.
+En el siguiente [video tutorial](https://youtu.be/sTndWTDefVw) se muestran elmentos que explican los anteriores pasos.
 
-[![Importación DICOM](http://img.youtube.com/vi/sTndWTDefVw/0.jpg)](http://www.youtube.com/watch?v=sTndWTDefVw "DICOM clean en Youtube")
+
+<!-- blank line -->
+<figure class="video_container">
+  <iframe src="https://www.youtube.com/embed/sTndWTDefVw" width="100%" height="310" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
+<!-- blank line -->
 
 
 * * *

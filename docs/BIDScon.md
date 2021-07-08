@@ -15,6 +15,8 @@ En la figura se ilustra un ejemplo de un archivo DICOM a un archivo BIDS
 - ANACONDA
 	- BIDScoin
 	- dcm2niix
+	- dicomsort (instalado con BIDScoin)
+	- dicomsorter (en caso de fallos con disomsort)
 
 ### Pasos 
 
@@ -33,18 +35,43 @@ pip install bidscoin
 apt install dcm2niix
 ```
 
- - Descomprimir archivos tar.gz o ZIP. Dependerá del sistema de compresión que se use para compartir el participante.
+ - Genere dos folders uno para las imagenes RAW y otro para las imagenes BIDS. 
+ - Descomprimir archivos tar.gz o ZIP en el folder RAW. Dependerá del sistema de compresión que se use para compartir el participante.
  - Organizar folders en version serie/folder
-	- Utilizar la opción de `-e .dcm` para que la extensión sea siempre en minúscula
+
 ```console
-dicomsort [folder de paciente] -e .dcm
+## pip install dicomsort 
+dicomsort [folder de paciente]
+## Example
+dicomsort original
+## los archivos ordenados quedaran dentro de la misma carpeta de entrada
 ```
- - Renombrar carpeta con prefijo sub- y borrar folder DICOM y DICOMDIR
- - Generar el archivo yaml que será el template para todo el proyecto. Solo se genera un archivo para todo el proyecto teniendo en cuenta que solo si se cambian los valores de adquisición i.e el nombre de secuencia de T1TFE a T13dTFE se deberá cambiar este archivo yaml.
+---
+
+Dicomsort requiere pydicom por encima de la versión 2. En Linux pueden ocurrir errores por la versión de pydicom. Si estos errores persisten use dicomsorter que es un paquete similar y mucho mas robusto. Dicomsorter no hace parte de las librerías instaladas por BIDScoin y por ello se debe 
+
+```console
+pip install dicomsorter
+dicomsorter [folderin] [foldersalida]
+## Example
+mkdir sub-001
+dicomsorter original sub-001
+## los archivos ordenados quedarán en sub001
+```
+
+---
+
+![sorting](img/sorting.png)
+
+ - Si ha usado `dicomsort` se requiere renombrar la carpeta original con prefijo **sub-** y borrar el folder DICOM y DICOMDIR. Si ha usado `dicomsorter` el ordenamiento ha requerido un carpeta de salida.
+ - Para que `bidscoin` funcione sobre la carpeta raw, ésta debe contener al menos una subcarpeta que comience con **sub-** sino se haya una subcarpeta **sub-xxx** el sistema parará. En formatos **BIDS** los sujetos comienzan siempre con el prefijo **sub-**. Este paso se requiere para todos los casos.
+ - El siguiente paso solo requiere ser hecho una vez y es la generación del archivo yaml que será el template para todo el proyecto. Solo si se cambian los valores de adquisición i.e el nombre de secuencia de T1TFE a T13dTFE se deberá cambiar este archivo yaml. Para poder hacer un archivo template se requiere usar `bisdmapper`, el cual a partir del archivo dicom buscará los nombres de las series y les asignará un nuevo nombre en formato BIDS.
 
 
 ```console
 bidsmapper rawfolder BIDSfolder 
+## example
+bidsmapper raw BIDS
 ```
 
 El resultado es un archivo yaml que si bien podria editarlo con un notepad, lo recomendable es usar el aplicativo BIDSeditor

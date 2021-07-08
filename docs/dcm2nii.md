@@ -17,10 +17,27 @@ Uso de dcm2nii. Se aclara que la libreria se ha actualizado, sin embargo los des
 
 ***Video tutorial sobre uso de dcm2nii (versión obsoleta)***
 
-[![Importación DICOM](img/videodcm2nii.png)](http://www.youtube.com/watch?v=F_cskbDONr0 "DCM2NII")
+
+<!-- blank line -->
+<figure class="video_container">
+  <iframe src="https://www.youtube.com/embed/F_cskbDONr0" width="100%" height="310" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
+<!-- blank line -->
+
+---
+
+NOTA Teniendo en cuenta que dcm2nii es obsoleta se prefiere usar dcm2niix. Solo en casos específicos como en casos de dificultad de reconstrucción es posible usar dcm2nii. 
+
+---
+
 
 ## MRIcroGL
 
 ***Video tutorial sobre uso de MRIcroGL que usa dcm2niix***
 
-[![Importación DICOM](img/videomricrogl.png)](http://www.youtube.com/watch?v=UlPMdeaY9wY "MRIcroGL")
+<!-- blank line -->
+<figure class="video_container">
+  <iframe src="https://www.youtube.com/embed/UlPMdeaY9wY" width="100%" height="310" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
+<!-- blank line -->
+
