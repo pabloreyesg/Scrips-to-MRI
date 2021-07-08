@@ -1,6 +1,6 @@
 ## BIDS conversion
 Posterior a la anonimizazión es recomendable realizar una conversión a versiones NIFTI. Existen amplias herramientas para realizar esta conversión como dcm2nii, mricronGL, SPM entre otros que se vieron en el anterior apartado. Sin embargo, es recomendable utilizar el formato estandar [BIDS](https://bids.neuroimaging.io) que incluye no solo la conversión a formatos NIFTI sino una estructura estandar de etiquetación para los nombres de archivos.
-La conversión a formatos BIDS requiere la elaboración de una plantilla inicial que se aplicará a todos los estudios. Exisaten pocos programas que tengan interfaz gráfica para la conversion BIDS. [BIDScoin](https://bidscoin.readthedocs.io/en/stable/) es una herramienta en python que presenta algunas intefaces gráficas que permiten un manejo ágil.
+La conversión a formatos BIDS requiere la elaboración de una plantilla inicial que se aplicará a todos los estudios. Existen pocos programas que tengan interfaz gráfica para la conversion BIDS. [BIDScoin](https://bidscoin.readthedocs.io/en/stable/) es una herramienta en python que presenta algunas intefaces gráficas que permiten un manejo ágil.
 
 Toda la información sobre la instalación y uso se puede encontrar en la siguiente página.
 [https://bidscoin.readthedocs.io/en/stable/](https://bidscoin.readthedocs.io/en/stable/)
