@@ -41,7 +41,7 @@ apt install dcm2niix
 
 ```console
 ## pip install dicomsort 
-dicomsort [folder de paciente]
+dicomsort [folder de sujeto]
 ## Example
 dicomsort original
 ## los archivos ordenados quedaran dentro de la misma carpeta de entrada
@@ -68,7 +68,7 @@ dicomsorter original sub-001
  - El siguiente paso solo requiere ser hecho una vez y es la generación del archivo yaml que será el template para todo el proyecto. Solo si se cambian los valores de adquisición i.e el nombre de secuencia de T1TFE a T13dTFE se deberá cambiar este archivo yaml. Para poder hacer un archivo template se requiere usar `bisdmapper`, el cual a partir del archivo dicom buscará los nombres de las series y les asignará un nuevo nombre en formato BIDS. Guarde el archivo en la carpeta BIDS.
 
 ```console
-bidsmapper rawfolder BIDSfolder 
+bidsmapper [folder raw de sujetos] [folder BIDS]
 ## example
 bidsmapper raw BIDS
 ```
