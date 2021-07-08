@@ -4,16 +4,26 @@
 
 # Required
 
-site_name: Dicom en investigación
+site_name: Manual DICOM y NIFTI
+site_description: Manuales de auyda en procesamiento de Neuroimágenes
 repo_url: https://github.com/pabloreyesg/Scrips-to-MRI
 site_url: https://github.com/pabloreyesg/Scrips-to-MRI/blob/master/docs/index.md
 site_author: Pablo Reyes
-copyright: © Pablo Reyes
+copyright: Copyright &copy; 2021 Pablo Reyes
 
 theme: readthedocs
 
 nav:
-    - Dicom clean: index.md
-    - BIDS: BIDScon.md
+    - Anonimizacion: index.md
+    - Conversion NIFTI : dcm2nii.md
+    - Conversion BIDS: BIDScon.md
     - About: about.md
+
+
+extra:
+  social:
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<pabloreyesg@gmail.com>
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/parapapush
 
