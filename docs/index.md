@@ -13,8 +13,8 @@ Pasos para anonimizar
 - Buscar por ID comenzando con *
 - Realizar Query (Consultar)
 - Darle a Retrieve (Recuperar)
-- Hacer Clean (Limpiar) - Checar opciones de anonimización
-- Export (Exportar): 
+- Hacer Clean (Limpiar) - Revisar opciones de anonimización
+- Export (Exportar):
 	- Anonimizado para investigación
 
 ### Desde DVD CD USB
@@ -23,9 +23,9 @@ Pasos para anonimizar
 - Usar [Dicomcleaner de pixelmed](http://www.dclunie.com/pixelmed/software/webstart/DicomCleanerUsage.html)
 - Insertar DVD o CD
 - Importar carpeta (import)
-- Hacer limpieza y anonimización (Clean) 
+- Hacer limpieza y anonimización (Clean)
 	- Revisar opciones de anonimización como "accession number"
-- Exportar (Export): 
+- Exportar (Export):
 	- Anonimizado para investigación
 
 ### Intercambio de imágenes dicom

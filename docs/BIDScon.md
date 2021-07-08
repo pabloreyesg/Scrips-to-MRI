@@ -1,5 +1,5 @@
 ## BIDS conversion
-Posterior a la anonimizazión es recomendable realizar una conversión a versiones NIFTI. Existen amplias herramientas para realizar esta conversión como dcm2nii, mricronGL, SPM entre otros que se vieron en el anterior apartado. Sin embargo, es recomendable utilizar el formato estandar [BIDS](https://bids.neuroimaging.io) que incluye no solo la conversión a formatos NIFTI sino una estructura estandar de etiquetación para los nombres de archivos.
+Posterior a la anonimización es recomendable realizar una conversión a versiones NIFTI. Existen amplias herramientas para realizar esta conversión como dcm2nii, mricronGL, SPM entre otros que se vieron en el anterior apartado. Sin embargo, es recomendable utilizar el formato estándar [BIDS](https://bids.neuroimaging.io) que incluye no solo la conversión a formatos NIFTI sino una estructura estándar de etiquetación para los nombres de archivos.
 La conversión a formatos BIDS requiere la elaboración de una plantilla inicial que se aplicará a todos los estudios. Existen pocos programas que tengan interfaz gráfica para la conversion BIDS. [BIDScoin](https://bidscoin.readthedocs.io/en/stable/) es una herramienta en python que presenta algunas intefaces gráficas que permiten un manejo ágil.
 
 Toda la información sobre la instalación y uso se puede encontrar en la siguiente página.
@@ -18,7 +18,7 @@ En la figura se ilustra un ejemplo de un archivo DICOM a un archivo BIDS
 	- dicomsort (instalado con BIDScoin)
 	- dicomsorter (en caso de fallos con disomsort)
 
-### Pasos 
+### Pasos
 
  - Instalación de librerías
 
@@ -35,12 +35,12 @@ pip install bidscoin
 apt install dcm2niix
 ```
 
- - Genere dos folders uno para las imagenes RAW y otro para las imagenes BIDS. 
+ - Genere dos folders uno para las imágenes RAW y otro para las imágenes BIDS.
  - Descomprimir archivos tar.gz o ZIP en el folder RAW. Dependerá del sistema de compresión que se use para compartir el participante.
- - Organizar folders en version serie/folder
+ - Organizar folders en versión serie/folder
 
 ```console
-## pip install dicomsort 
+## pip install dicomsort
 dicomsort [folder de sujeto]
 ## Example
 dicomsort original
@@ -73,13 +73,13 @@ bidsmapper [folder raw de sujetos] [folder BIDS]
 bidsmapper raw BIDS
 ```
 
-El resultado es un archivo yaml que si bien podria editarlo con un notepad, lo recomendable es usar el aplicativo `BIDSeditor`
+El resultado es un archivo yaml que si bien podría editarlo con un notepad, lo recomendable es usar el aplicativo `BIDSeditor`
 
  - Con el archivo YAML creado es posible editarlo con `bidseditor` para adaptarlo al sitio del proyecto o institución. Tenga en cuenta que este archivo YAML solo servirá para su institución.
  - Editar el archivo YAML para renombrar y organizar los archivos que requiere su proyecto.
-   - Inicie `bidseditor` para cambiar las especificaciones de YAML 
-   
-```console 
+   - Inicie `bidseditor` para cambiar las especificaciones de YAML
+
+```console
 bidseditor -b bidsmap.yaml [bidsfolder]
 ## Example:
 bidseditor -b BIDS\code\bidscoin\bidsmap.yaml bids
@@ -88,18 +88,18 @@ bidseditor -b BIDS\code\bidscoin\bidsmap.yaml bids
 ![editor](img/bidscoin_editor.png)
 
 
- - En la sección de *action* edite los archivos que requiere para su investigación, recuerde que BIDS requiere que las secuencuas estructurales queden en un folder *anat*, las funcionales en *func* y las de difusion en *dwi*. Puede consultar el estandar en la página principal de [BIDS](https://bids-specification.readthedocs.io/en/v1.6.0/).
+ - En la sección de *action* edite los archivos que requiere para su investigación, recuerde que BIDS requiere que las secuencias estructurales queden en un folder *anat*, las funcionales en *func* y las de difusión en *dwi*. Puede consultar el estándar en la página principal de [BIDS](https://bids-specification.readthedocs.io/en/v1.6.0/).
  - En verde es posible que el sistema reconozca algunos archivos y los intente renombrar; sin embargo, revise qué tipo de archivos requiere usted para su investigación. Los archivos que no necesite, serán almacenados en una subcarpeta denominada `extra_data`.
 
 ![editor](img/bidseditor.png)
 
  - Con el editor usted podrá, determinar las características básicas del nombre del archivo. Los mínimos requisitos son el tipo de dato y el sufijo. El resto de variables son opcionales. Guarde nuevamente o sobreescriba el archivo YAML.
  - Finalmente el paso que viene es la conversión dicom a nifti para ello puede usar el comando `bidscoiner`. Si observa que no hay conversión, revise nuevamente el archivos yaml con bidseditor y modifique en opciones la sección "module add dcm2niix" a "dcm2niix".
- - El sistema Bidscoin funciona directamente sobre la carpeta raw en la que se encuentran los sujetos. Dado que los sujetos se identifican son sub-XXX, usted debe introducir el código de cada uno y el sistema convertirá automaticamente los sujetos. Recuerde que no debería cambiar los parámetros de adquisición de las imágenes.
+ - El sistema Bidscoin funciona directamente sobre la carpeta raw en la que se encuentran los sujetos. Dado que los sujetos se identifican son sub-XXX, usted debe introducir el código de cada uno y el sistema convertirá automáticamente los sujetos. Recuerde que no debería cambiar los parámetros de adquisición de las imágenes.
 
 ```console
-bidscoiner [sujeto] [archivo yaml] [forlder de sujetos] [folder BIDS] 
+bidscoiner [sujeto] [archivo yaml] [forlder de sujetos] [folder BIDS]
 ## Example
 bidscoiner -p sub-001 -b bids/code/bidscoin/bidsmap.yaml raw/ bids/
 ```
-Una vez que haya realizado la primera conversión, verifique con [BIDSvalidator](https://bids-standard.github.io/bids-validator/) que se cumplen los requisitos del formato. Si tiene errores graves, modifique nuevamente el archivo YAML. Si no requiere archivos del extra_data puede borrarlos, pero conserve igualmente una copia original. 
+Una vez que haya realizado la primera conversión, verifique con [BIDSvalidator](https://bids-standard.github.io/bids-validator/) que se cumplen los requisitos del formato. Si tiene errores graves, modifique nuevamente el archivo YAML. Si no requiere archivos del extra_data puede borrarlos, pero conserve igualmente una copia original.
