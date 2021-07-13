@@ -103,3 +103,12 @@ bidscoiner [sujeto] [archivo yaml] [forlder de sujetos] [folder BIDS]
 bidscoiner -p sub-001 -b bids/code/bidscoin/bidsmap.yaml raw/ bids/
 ```
 Una vez que haya realizado la primera conversión, verifique con [BIDSvalidator](https://bids-standard.github.io/bids-validator/) que se cumplen los requisitos del formato. Si tiene errores graves, modifique nuevamente el archivo YAML. Si no requiere archivos del extra_data puede borrarlos, pero conserve igualmente una copia original.
+
+
+***Videotutorial***
+
+<!-- blank line -->
+<figure class="video_container">
+  <iframe src="https://www.youtube.com/embed/rCMqb5HNF0g" width="100%" height="310" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
+<!-- blank line -->
