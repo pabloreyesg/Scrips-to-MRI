@@ -48,7 +48,7 @@ dicomsort original
 ```
 ---
 
-Dicomsort requiere pydicom por encima de la versión 2. En Linux pueden ocurrir errores por la versión de pydicom. Si estos errores persisten use dicomsorter que es un paquete similar y mucho mas robusto. Dicomsorter no hace parte de las librerías instaladas por BIDScoin y por ello se debe instalar.
+Dicomsort requiere pydicom por encima de la versión 2. En Linux pueden ocurrir errores por la versión de pydicom. Si estos errores persisten use dicomsorter que es un paquete similar y mucho mas robusto. Dicomsorter no hace parte de las librerías instaladas por BIDScoin y por ello se debe instalar. Otros errrores pueden estar relacionados con la instalación de QT5, verifique que se encuentra instalado QT5.
 
 ```console
 pip install dicomsorter
