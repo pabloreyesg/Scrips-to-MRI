@@ -25,3 +25,6 @@ for f in *; do DenoiseImage -d 3 -i $f -o d$f -v -n Rician; done
 # dcm2nii_conversions
 Scripts to convert and reorder images
 This page provides some script to manipulate dicom images.
+
+# Read my documentation
+[https://scrips-to-mri.readthedocs.io/es/latest/](https://scrips-to-mri.readthedocs.io/es/latest/)
