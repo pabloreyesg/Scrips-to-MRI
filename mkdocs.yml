@@ -18,6 +18,7 @@ nav:
     - Conversion NIFTI : dcm2nii.md
     - Conversion BIDS: BIDScon.md
     - About: about.md
+    - Primeros Pasos: Firststeps.md
 
 
 extra:
@@ -26,4 +27,3 @@ extra:
       link: mailto:<pabloreyesg@gmail.com>
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/parapapush
-
