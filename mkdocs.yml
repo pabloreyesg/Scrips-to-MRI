@@ -14,8 +14,8 @@ copyright: Copyright &copy; 2021 Pablo Reyes
 theme: readthedocs
 
 nav:
-    - Apps y programas: apps.md
-    - Anonimizacion: index.md
+    - Apps y programas: index.md
+    - Anonimizacion: anon.md
     - Conversion NIFTI : dcm2nii.md
     - Conversion BIDS: BIDScon.md
     - Preprocesamiento: Firststeps.md

@@ -1,46 +1,41 @@
-# Gestión de neuroimágenes DICOM
+## Recomendaciones generales
 
-## Importación DICOM y anonimización
-Para anonimizar archivos dicom es recomendable usar [Dicomcleaner de pixelmed](http://www.dclunie.com/pixelmed/software/webstart/DicomCleanerUsage.html). Se puede usar en cualquier sistema operativo y tiene interfaz gráfica. Por otra parte dicomcleaner permite importar archivos desde un CD y desde el servidor PACS que aloja las imágenes dicom en una institución.
+- OS: Ubuntu / Debian
 
-![dicomclean](img/dicomclean.png)
+- Hardware mínimo: CPU i5 o i7, 8Gb en RAM y un disco duro de 1Tb.
 
-### Desde el PACS
-Pasos para anonimizar
+Las maquinas virtuales en windows si bien pueden servir para aprender el funcionamiento, tienen un bajo rendimiento. WLS2 en windows permite ejecutar Ubuntu directamente en windows, tiene algunas desventajas en rendimiento aun, pero es claro que la comunidad esta trabajando fuertemente en ello.
 
-- Usar [Dicomcleaner de pixelmed](http://www.dclunie.com/pixelmed/software/webstart/DicomCleanerUsage.html)
-- Conectarse al PACS (servidor)
-- Buscar por ID comenzando con *
-- Realizar Query (Consultar)
-- Darle a Retrieve (Recuperar)
-- Hacer Clean (Limpiar) - Revisar opciones de anonimización
-- Export (Exportar):
-	- Anonimizado para investigación
+El procesamiento de neuroimágenes generalmente hace uso de manera intensiva de librerías, aplicaciones y programas en su mayoría con licencias Open. Ahora bien, con respecto a la pregunta inicial de qué sistema operativo usar mi recomendación es usar GNU/Linux principalmente de variantes Debian, bien puede ser Debian es su versión mas pura o variantes como Ubuntu, Ubuntu Mate, Pop o similares. Variantes basadas en arch tienen poco desarrollo en la comunidad así que requerirá de un mayor trabajo.
 
-### Desde DVD CD USB
-Pasos para anonimizar
+- MACOS: Es de aclarar que en MAC con chips tipo intel las aplicaciones corren muy bien; sin embargo, con el cambio a M1 algunas de las aplicaciones prototípicas son ahora emuladas y otras no lo hacen tan bien. En la siguiente página se ilustra una evaluación con diferentes programas: [Apple silicon for neuroimaging](https://github.com/neurolabusc/AppleSiliconForNeuroimaging)
 
-- Usar [Dicomcleaner de pixelmed](http://www.dclunie.com/pixelmed/software/webstart/DicomCleanerUsage.html)
-- Insertar DVD o CD
-- Importar carpeta (import)
-- Hacer limpieza y anonimización (Clean)
-	- Revisar opciones de anonimización como "accession number"
-- Exportar (Export):
-	- Anonimizado para investigación
+## Programas básicos
 
-### Intercambio de imágenes dicom
-Es recomendable que para el intercambio de imágenes se usen formatos comprimidos como ZIP o tar.gz. Subir archivos por ejemplo a un servicio de nube sin su compresión puede incrementar las probabilidades de errores dado que generalmente las neuroimágenes producen miles de archivos y la falta de uno de ellos puede corromper la visualización o conversión a otros formatos.
+- [FSL](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki)
 
-***Videotutorial***
+- [ANTs by stnava](http://stnava.github.io/ANTs/)
 
-En el siguiente [video tutorial](https://youtu.be/sTndWTDefVw) se muestran elmentos que explican los anteriores pasos.
+- [Python](https://www.python.org/)
 
+- [ITK-SNAP ](http://www.itksnap.org/pmwiki/pmwiki.php)
 
-<!-- blank line -->
-<figure class="video_container">
-  <iframe src="https://www.youtube.com/embed/sTndWTDefVw" width="100%" height="310" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
-<!-- blank line -->
+- [MRIcroGL: Tool/Resource Info](https://www.nitrc.org/projects/mricrogl/)
 
+- Repositorio [Debian Neuroscience Package Repository](https://neuro.debian.net/) (tiene algunas versiones desactualizadas en paquetes)
 
-* * *
+- [dcm2niix](https://github.com/rordenlab/dcm2niix)
+
+## Competencias básicas
+
+Si desea tener una introducción a neuroimágenes que sea mas fluida existen un conjunto de competencias que le serán de mucha utilidad
+
+- Conocer y usar la terminal (es pantalla negrita que poco se usa).
+
+- Aprender a realizar scripts en bash.
+
+- Conocimientos generales sobre cómo se adquieren y procesan imágenes médicas.
+
+- Paciencia ya que algunos procesos son largos e incluso de varias horas.
+
+- Tolerancia a la frustración.
