@@ -1,6 +1,4 @@
-# Apps, programas y OS
-
-**Recomendaciones básicas**
+## Recomendaciones generales
 
 - OS: Ubuntu / Debian
 
@@ -12,9 +10,7 @@ El procesamiento de neuroimágenes generalmente hace uso de manera intensiva de 
 
 - MACOS: Es de aclarar que en MAC con chips tipo intel las aplicaciones corren muy bien; sin embargo, con el cambio a M1 algunas de las aplicaciones prototípicas son ahora emuladas y otras no lo hacen tan bien. En la siguiente página se ilustra una evaluación con diferentes programas: [Apple silicon for neuroimaging](https://github.com/neurolabusc/AppleSiliconForNeuroimaging)
 
-
-
-**Programas básicos**
+## Programas básicos
 
 - [FSL]([FSL - FslWiki (ox.ac.uk)](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki))
 
@@ -30,7 +26,7 @@ El procesamiento de neuroimágenes generalmente hace uso de manera intensiva de 
 
 - [dcm2niix](https://github.com/rordenlab/dcm2niix)
 
-**Competencias básicas**
+## Competencias básicas
 
 Si desea tener una introducción a neuroimágenes que sea mas fluida existen un conjunto de competencias que le serán de mucha utilidad
 
@@ -39,6 +35,14 @@ Si desea tener una introducción a neuroimágenes que sea mas fluida existen un 
 - Aprender a realizar scripts en bash.
 
 - Conocimientos generales sobre cómo se adquieren y procesan imágenes médicas.
+
+- Paciencia ya que algunos procesos son largos e incluso de varias horas.
+
+- Tolerancia a la frustración.
+
+
+
+
 
 
 
