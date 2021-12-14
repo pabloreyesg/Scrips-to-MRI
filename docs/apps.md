@@ -12,7 +12,7 @@ El procesamiento de neuroimágenes generalmente hace uso de manera intensiva de 
 
 ## Programas básicos
 
-- [FSL]([FSL - FslWiki (ox.ac.uk)](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki))
+- [FSL](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki)
 
 - [ANTs by stnava](http://stnava.github.io/ANTs/)
 
@@ -39,13 +39,3 @@ Si desea tener una introducción a neuroimágenes que sea mas fluida existen un 
 - Paciencia ya que algunos procesos son largos e incluso de varias horas.
 
 - Tolerancia a la frustración.
-
-
-
-
-
-
-
-
-
-
