@@ -17,7 +17,6 @@ nav:
     - Anonimizacion: index.md
     - Conversion NIFTI : dcm2nii.md
     - Conversion BIDS: BIDScon.md
-    - Apps y programas: apps.md
     - Preprocesamiento: Firststeps.md
     - About: about.md
 
