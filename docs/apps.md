@@ -10,25 +10,25 @@ Las maquinas virtuales en windows si bien pueden servir para aprender el funcion
 
 El procesamiento de neuroimágenes generalmente hace uso de manera intensiva de librerías, aplicaciones y programas en su mayoría con licencias Open. Ahora bien, con respecto a la pregunta inicial de qué sistema operativo usar mi recomendación es usar GNU/Linux principalmente de variantes Debian, bien puede ser Debian es su versión mas pura o variantes como Ubuntu, Ubuntu Mate, Pop o similares. Variantes basadas en arch tienen poco desarrollo en la comunidad así que requerirá de un mayor trabajo.
 
+- MACOS: Es de aclarar que en MAC con chips tipo intel las aplicaciones corren muy bien; sin embargo, con el cambio a M1 algunas de las aplicaciones prototípicas son ahora emuladas y otras no lo hacen tan bien. En la siguiente página se ilustra una evaluación con diferentes programas: [Apple silicon for neuroimaging](https://github.com/neurolabusc/AppleSiliconForNeuroimaging)
+
 
 
 **Programas básicos**
 
-- FSL
+- [FSL]([FSL - FslWiki (ox.ac.uk)](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki))
 
-- ANTs
+- [ANTs by stnava](http://stnava.github.io/ANTs/)
 
-- Python 3
+- [Python](https://www.python.org/)
 
-- ITKsnap
+- [ITK-SNAP ](http://www.itksnap.org/pmwiki/pmwiki.php)
 
-- MRIcronGL
+- [MRIcroGL: Tool/Resource Info](https://www.nitrc.org/projects/mricrogl/)
 
-- Repositorio Neurodebian (tiene algunas versiones desactualizadas en paquetes)
+- Repositorio [Debian Neuroscience Package Repository](https://neuro.debian.net/) (tiene algunas versiones desactualizadas en paquetes)
 
-- dcm2niix
-
-
+- [dcm2niix](https://github.com/rordenlab/dcm2niix)
 
 **Competencias básicas**
 
@@ -39,6 +39,8 @@ Si desea tener una introducción a neuroimágenes que sea mas fluida existen un 
 - Aprender a realizar scripts en bash.
 
 - Conocimientos generales sobre cómo se adquieren y procesan imágenes médicas.
+
+
 
 
 
