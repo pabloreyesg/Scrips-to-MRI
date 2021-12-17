@@ -16,19 +16,28 @@ El procesamiento de neuroimágenes generalmente hace uso de manera intensiva de 
 
 ## Programas básicos
 
+Antes de comenzar, es importante contar con un buen numero de programas instalados para poder manipular y procesar las imágenes.
+
+Estos serían los programas indispensables:
+
 - [FSL](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki)
 
 - [ANTs by stnava](http://stnava.github.io/ANTs/)
 
 - [Python](https://www.python.org/)
 
+- [Docker](https://docs.docker.com/engine/install/)
+
 - [ITK-SNAP ](http://www.itksnap.org/pmwiki/pmwiki.php)
 
 - [MRIcroGL: Tool/Resource Info](https://www.nitrc.org/projects/mricrogl/)
 
-- Repositorio [Debian Neuroscience Package Repository](https://neuro.debian.net/) (tiene algunas versiones desactualizadas en paquetes)
+- Repositorio [Debian Neuroscience Package Repository](https://neuro.debian.net/) (tiene algunas versiones desactualizadas, pero es una excelente opción)
 
 - [dcm2niix](https://github.com/rordenlab/dcm2niix)
+
+Existe un paquete ampliamente usado y es [SPM](https://www.fil.ion.ucl.ac.uk/spm/). Este paquete es realmente excelente; sin embargo, requiere de Matlab para funcionar, el cual requiere de licencia. Una opción ante esta dificultad es la versión standalone o en versión docker aunque tiene algunas restricciones. 
+
 
 ## Competencias básicas
 
