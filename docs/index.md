@@ -36,7 +36,7 @@ Estos serían los programas indispensables:
 
 - [dcm2niix](https://github.com/rordenlab/dcm2niix)
 
-Existe un paquete ampliamente usado y es [SPM](https://www.fil.ion.ucl.ac.uk/spm/). Este paquete es realmente excelente; sin embargo, requiere de Matlab para funcionar, el cual requiere de licencia. Una opción ante esta dificultad es la versión standalone o en versión docker aunque tiene algunas restricciones. 
+Existe un paquete ampliamente usado y es [SPM](https://www.fil.ion.ucl.ac.uk/spm/). Este paquete es realmente excelente; sin embargo, requiere de Matlab para funcionar, el cual requiere de licencia; menciono esto como limitación dado que en Latinoamérica no todas las universidades o centros de investigación tienen opciones de comprar licencias para investigación de Matlab. Una opción ante esta dificultad es la versión standalone aunque tiene algunas restricciones como la dificultad de instalar nuevos paquetes o *toolboxes*. 
 
 
 ## Competencias básicas
@@ -52,3 +52,5 @@ Si desea tener una introducción a neuroimágenes que sea mas fluida existen un 
 - Paciencia ya que algunos procesos son largos e incluso de varias horas.
 
 - Tolerancia a la frustración porque un pequeño fallo como una coma o paréntesis mal puesto pueden acarrear tiempos de revisión que generalmente no se contemplan.
+
+- Tomar un curso virtual y si es posible uno presencial sobre procesamiento de neuroimagenes. Muchos de los problemas a los que se enfrenta uno ya han sido resueltos por otros grupos. 
