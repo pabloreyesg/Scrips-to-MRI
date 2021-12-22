@@ -10,7 +10,7 @@
 
 #==============================================================================
 
-pathBIDS='/media/pablo/8e95eef0-a766-496a-855d-1c15f66c6c39/REDLAT/BIDSdeface'
+pathBIDS='/media/folder/folder/folder/BIDSdeface'
 
 cat $pathBIDS/lista.txt | parallel -j 10 pydeface $pathBIDS/{}/anat/*T1*.gz
 
