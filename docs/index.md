@@ -34,6 +34,8 @@ Estos serían los programas indispensables:
 
 - [MRIcroGL: Tool/Resource Info](https://www.nitrc.org/projects/mricrogl/)
 
+- [Weasis Medical Viewer](https://nroduit.github.io/en/)
+
 - Repositorio [Debian Neuroscience Package Repository](https://neuro.debian.net/) (tiene algunas versiones desactualizadas, pero es una excelente opción)
 
 - [dcm2niix](https://github.com/rordenlab/dcm2niix)
@@ -55,8 +57,6 @@ Si desea tener una introducción a neuroimágenes que sea mas fluida existen un 
 - Paciencia ya que algunos procesos son largos e incluso de varias horas.
 
 - Tolerancia a la frustración porque un pequeño fallo como una coma o paréntesis mal puesto pueden acarrear tiempos de revisión que generalmente no se contemplan.
-
-- 
 
 - Ser autodidacta, si bien existen manuales y guías que le ayudaran en el proceso es importante tener un gran sentido de búsqueda. Algunas respuestas estarán en foros, listas de correos  o en páginas web bien sea que esten actualizadas o no.
 
