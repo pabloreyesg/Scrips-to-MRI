@@ -19,6 +19,7 @@ nav:
     - Conversion NIFTI : dcm2nii.md
     - Conversion BIDS: BIDScon.md
     - Preprocesamiento: Firststeps.md
+    - fMRI: Funcional_fsl.md
     - About: about.md
 
 
