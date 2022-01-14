@@ -14,7 +14,7 @@ El procesamiento de neuroimágenes generalmente hace uso de manera intensiva de 
 
 - MACOS: Es de aclarar que en MAC con chips tipo intel las aplicaciones corren muy bien; sin embargo, con el cambio a ARM con M1 algunas de las aplicaciones prototípicas son ahora emuladas y otras no lo hacen tan bien. En la siguiente página se ilustra una evaluación con diferentes programas: [Apple silicon for neuroimaging](https://github.com/neurolabusc/AppleSiliconForNeuroimaging), para que pueda tomar una mejor decisión.
 
-Es importante resaltar que el procesamiento de neuroimágenes para estudios sencillos pueden ser abordados con computadoras comunes y de medianas o altas prestaciones. Sin embargo, si usted tiene acceso a HCP, clusters o similares muy posiblemente podrá abordar problemas de mayor complejidad computacional; tal vez este sea un futuro a mediano plazo en las neurociencias, donde por medio de interfaces web, usted accede a clusters de computadoras y envia su solicitud similar a la propuesta de [Brainlife.](https://brainlife.io)
+Es importante resaltar que el procesamiento de neuroimágenes para estudios sencillos pueden ser abordados con computadoras comunes y de medianas o altas prestaciones. Sin embargo, si usted tiene acceso a HCP, clusters o similares muy posiblemente podrá abordar problemas de mayor complejidad computacional; tal vez este sea un futuro a mediano plazo en las neurociencias, donde por medio de interfaces web, usted accede a clusters de computadoras y envía su solicitud similar a la propuesta de [Brainlife.](https://brainlife.io)
 
 ## Programas básicos
 
@@ -48,25 +48,28 @@ Si desea tener una introducción a neuroimágenes que sea mas fluida existen un 
 
 - Aprender a usar Linux (puede usar cualquier tutorial básico de Youtube para esto)
 
-- Conocer y usar la terminal (es pantalla negrita que poco se usa).
+- Conocer y usar la terminal (al principio cuesta, pero luego se disfruta enormemente).
 
 - Aprender a realizar scripts en bash.
 
 - Conocimientos generales sobre cómo se adquieren y procesan imágenes médicas.
 
-- Paciencia ya que algunos procesos son largos e incluso de varias horas.
+- Paciencia, ya que algunos procesos son largos e incluso de varias horas.
 
 - Tolerancia a la frustración porque un pequeño fallo como una coma o paréntesis mal puesto pueden acarrear tiempos de revisión que generalmente no se contemplan.
 
-- Ser autodidacta, si bien existen manuales y guías que le ayudaran en el proceso es importante tener un gran sentido de búsqueda. Algunas respuestas estarán en foros, listas de correos  o en páginas web bien sea que esten actualizadas o no.
+- Ser autodidacta, si bien existen manuales y guías que le ayudaran en el proceso, es importante tener un gran sentido de búsqueda. Algunas respuestas estarán en foros, listas de correos  o en páginas web bien sea que estén actualizadas o no.
 
 - Realice siempre los ejemplos que dan los programas y compare sus resultados con el esperado.
 
-- No invente la rueda, las neuroimágenes son un campo con un alto desarrollo y permanente actualización; es posible que exista ya un toolbox, libreria o similar que contemple su propuesta. Siempre revise qué se ha hecho.
+- No invente la rueda, las neuroimágenes son un campo con un alto desarrollo y permanente actualización; es posible que exista ya un toolbox, librería o similar que contemple su propuesta. Siempre revise qué se ha hecho.
+
+## Contenedores
+Dado que la instalación y compilación de algunos paquetes requiere de una buena cantidad de tiempo; se ha comenzado a usar el sistema de contenedores para poder tener todas las librerías de manera rápida. Existen dos tipos de contenedores ampliamente usados [Docker](https://docs.docker.com/get-docker/) y Singularity; siendo Docker el mas usado. Una de las ventajas de Docker es que permite el despliegue de un gran conjunto de herramientas en poco pasos. [Neurodocker](https://www.repronim.org/neurodocker/); es uno de los mejores ejemplos de esta propuesta. Igualmente si usted se adhiere a la propuesta BIDS; existen un conjunto de [apps](https://bids-apps.neuroimaging.io/) para Docker que funcionan directamente con BIDS y le permiten por ejemplo; control de calidad, grosor cortical, análisis funcionales o de conectividad entre muchos otros. Le recomendaría iniciar de manera sencilla con programas como SPM y FSL y una vez tenga mas conocimientos de los flujos de procesamiento se pase a contenedores docker sobretodo si va analizar masivamente datos.
 
 ## ¿Dónde aprender?
 
-Si usted desea realmente aprender cómo funcionan los análisis de neuroimágenes porque desea investigar en este tema, es altamente recomendable realizar un curso introductorio, aquí hay algunos ejemplos de cursos. No se limite a unicamente observar el curso, sino a replicar los métodos de análisis que se dan. La observación sin ejecución realmente no le servirá de mucho. 
+Si usted desea realmente aprender cómo funcionan los análisis de neuroimágenes porque desea investigar en este tema, es altamente recomendable realizar un curso introductorio, aquí hay algunos ejemplos de cursos. No se limite a unicamente observar el curso, sino a replicar los métodos de análisis que se dan. La observación sin ejecución realmente no le servirá de mucho.
 
 - Principios de fMRI -1  [Youtube](https://www.youtube.com/channel/UC_BIby85hZmcItMrkAlc8eA)
 
