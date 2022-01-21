@@ -14,6 +14,13 @@ En la figura se ilustra un ejemplo de un archivo DICOM a un archivo BIDS
 
 ![Bids Format](img/bidsformat.png)
 
+Existen tres momentos para la conversión de dicom a BIDS
+1. Instalación de paquetes (se realiza una única vez).
+2. Creación de plantilla (se realiza una única vez).
+3. Conversión (puede ser por sujeto o masivamente).
+
+Los dos primeros pasos pueden ser algo engorrosos y requieren de paciencia (le recomiendo ver el video explicativo). La ventaja es que una vez hecho esto, podrá realizar conversiones masivamente sin preocuparse por posibles errores. 
+
 ### Requisitos (en windows)
 
 - ANACONDA
@@ -26,9 +33,11 @@ En la figura se ilustra un ejemplo de un archivo DICOM a un archivo BIDS
 
 - Instalación de librerías
 
-En windows por medio de la consola de ANACONDA (prompt)
+En windows por medio de la consola de ANACONDA (powershell prompt).
+Es recomendable crear un ambiente (enviroment) independiente para correr el convertidor bidscoin. Para bidscoin versión 3.7.0 se requiere usar python 3.8 en adelante. 
 
 ```console
+pip install dicomsorter
 pip install bidscoin
 conda install -c conda-forge dcm2niix
 ```
@@ -42,6 +51,7 @@ conda install -c conda-forge dcm2niix
 En linux
 
 ```console
+## pip install dicomsort
 pip install bidscoin
 apt install dcm2niix
 ```
@@ -51,7 +61,6 @@ apt install dcm2niix
 - Organizar folders en versión serie/folder
 
 ```console
-## pip install dicomsort
 dicomsort [folder de sujeto]
 ## Example
 dicomsort original
@@ -121,6 +130,6 @@ Una vez que haya realizado la primera conversión, verifique con [BIDSvalidator]
 <!-- blank line -->
 
 <figure class="video_container">
-  <iframe src="https://www.youtube.com/embed/rCMqb5HNF0g" width="100%" height="310" frameborder="0" allowfullscreen="true"> </iframe>
+  <iframe src="https://www.youtube.com/embed/ze9vibDPYyQ" width="100%" height="310" frameborder="0" allowfullscreen="true"> </iframe>
 </figure>
 <!-- blank line -->
