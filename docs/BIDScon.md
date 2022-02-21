@@ -131,6 +131,10 @@ bidscoiner [sujeto] [archivo yaml] [forlder de sujetos] [folder BIDS]
 bidscoiner -p sub-001 -b bids/code/bidscoin/bidsmap.yaml raw/ bids/
 ```
 
+## Conversión con subcarpetas de sesión
+Los ejemplos anteriores son útiles para el caso en el cual el estudio se plantea de una sola sesión. Cuando existen varias sesiones y se trata de estudios longitudinales lo ideal sería tener tener subcarpetas llamadas sesión.
+Ene estos casos, se recomienda que por cada fecha exista una sesión. Si este es el caso le recomiendo que en la carpeta raw genere dentro de la carpeta sub-- una subcarpeta llamada ses-01 por ejemplo. Cuando realice la conversión bidscoin automaticamente detectará la sesión 1 y procederá a crearla. 
+
 Una vez que haya realizado la primera conversión, verifique con [BIDSvalidator](https://bids-standard.github.io/bids-validator/) que se cumplen los requisitos del formato. Si tiene errores graves, modifique nuevamente el archivo YAML. Si no requiere archivos del extra_data puede borrarlos, pero conserve igualmente una copia original.
 
 ***Videotutorial***
