@@ -19,7 +19,7 @@ Existen tres momentos para la conversión de dicom a BIDS
 2. Creación de plantilla (se realiza una única vez).
 3. Conversión (puede ser por sujeto o masivamente).
 
-Los dos primeros pasos pueden ser algo engorrosos y requieren de paciencia (le recomiendo ver el video explicativo). La ventaja es que una vez hecho esto, podrá realizar conversiones masivamente sin preocuparse por posibles errores. 
+Los dos primeros pasos pueden ser algo engorrosos y requieren de paciencia (le recomiendo ver el video explicativo). La ventaja es que una vez hecho esto, podrá realizar conversiones masivamente sin preocuparse por posibles errores.
 
 ## Instalación de paquetes
 
@@ -36,7 +36,7 @@ Los dos primeros pasos pueden ser algo engorrosos y requieren de paciencia (le r
 - Instalación de librerías
 
 En windows por medio de la consola de ANACONDA (powershell prompt).
-Es recomendable crear un ambiente (enviroment) independiente para correr el convertidor bidscoin. Para bidscoin versión 3.7.0 se requiere usar python 3.8 en adelante. 
+Es recomendable crear un ambiente (enviroment) independiente para correr el convertidor bidscoin. Para bidscoin versión 3.7.0 se requiere usar python 3.8 en adelante.
 
 ```console
 pip install dicomsorter
@@ -132,6 +132,18 @@ bidscoiner -p sub-001 -b bids/code/bidscoin/bidsmap.yaml raw/ bids/
 ```
 
 Una vez que haya realizado la primera conversión, verifique con [BIDSvalidator](https://bids-standard.github.io/bids-validator/) que se cumplen los requisitos del formato. Si tiene errores graves, modifique nuevamente el archivo YAML. Si no requiere archivos del extra_data puede borrarlos, pero conserve igualmente una copia original.
+
+En ocasiones la páginas de validación puede llegar a ser molesta por sus caídas; sin embargo, es posible correr un validador en su propio computador. Para esto primero deberás descargar Docker e instalarlo en tu sistema operativo. [Manual de instalación en español]{https://soportetic.net/como-instalar-docker-en-windows-10-home/}
+
+Una vezx instalado tendrá que correr el docker de BIDS en el windows powershell y reemplazar la ruta de la carpeta en su propio computador. 
+
+
+
+```console
+docker run -ti --rm -v C:\path_a_la_carpeta_de_BIDS:/data:ro bids/validator /data
+```
+
+
 
 ***Videotutorial***
 
