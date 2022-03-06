@@ -137,9 +137,9 @@ Ene estos casos, se recomienda que por cada fecha exista una sesión. Si este es
 
 Una vez que haya realizado la primera conversión, verifique con [BIDSvalidator](https://bids-standard.github.io/bids-validator/) que se cumplen los requisitos del formato. Si tiene errores graves, modifique nuevamente el archivo YAML. Si no requiere archivos del extra_data puede borrarlos, pero conserve igualmente una copia original.
 
-En ocasiones la páginas de validación puede llegar a ser molesta por sus caídas; sin embargo, es posible correr un validador en su propio computador. Para esto primero deberás descargar Docker e instalarlo en tu sistema operativo. [Manual de instalación en español](https://soportetic.net/como-instalar-docker-en-windows-10-home/)
+En ocasiones la página de validación puede llegar a ser molesta por sus caídas; sin embargo, es posible correr un validador en su propio computador. Para esto primero deberá descargar Docker e instalarlo en su sistema operativo. [Manual de instalación en español](https://soportetic.net/como-instalar-docker-en-windows-10-home/)
 
-Una vezx instalado tendrá que correr el docker de BIDS en el windows powershell y reemplazar la ruta de la carpeta en su propio computador.
+Una vez instalado tendrá que correr el docker de BIDS en el windows powershell y reemplazar la ruta de la carpeta en su propio computador.
 
 
 
