@@ -38,27 +38,3 @@ Durante la adquisición es frecuente encontrar algunos artefactos en la imagen, 
 ```
 for f in *; do N4BiasFieldCorrection -d 3 -i $f -o n$f -v; done
 ```
-
-## Extracción de craneo
-Las imágenes estructurales tomadas en T1 y T2, requieren como etapa previa al procesamiento la extracción del cráneo. Este paso es útil para posteriores estapas como la normalización y el registro. Una de las herramientas con mayor historia es BET de FSL.
-
-***Videotutorial sobre el uso de BET***
-
-<!-- blank line -->
-
-<figure class="video_container">
-  <iframe src="https://www.youtube.com/embed/IZN_8TpVgqo" width="100%" height="310" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
-<!-- blank line -->
-
-## Registro y normalización
-Normalizar puede ser definida como transformar el espacio geométrico de una imagen y llevarla a otro espacio geométrico. Existen dos escenarios en los que se requiere un registro: cuando un participante se le toman varias imágenes en el tiempo y se quiere visualizar las diferencias será necesario tener un proceso de registro entre estos tiempos; cuando se requiere normalizar la imagen de un participante hacia una plantilla o template estandard como el MNI.
-
-***Videotutorial sobre el uso de FLIRT***
-
-<!-- blank line -->
-
-<figure class="video_container">
-  <iframe src="https://www.youtube.com/embed/LsYxcAbG2Ok" width="100%" height="310" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
-<!-- blank line -->
