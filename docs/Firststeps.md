@@ -59,6 +59,10 @@ Las imágenes estructurales tomadas en T1 y T2, requieren como etapa previa al p
 ## Registro y normalización
 Normalizar puede ser definida como transformar el espacio geométrico de una imagen y llevarla a otro espacio geométrico. Existen dos escenarios en los que se requiere un registro: cuando un participante se le toman varias imágenes en el tiempo y se quiere visualizar las diferencias será necesario tener un proceso de registro entre estos tiempos; cuando se requiere normalizar la imagen de un participante hacia una plantilla o template estandard como el MNI.
 
+**Resultado**
+
+![](img/registration.gif)
+
 ***Videotutorial sobre el uso de FLIRT***
 
 <figure class="video_container">
