@@ -42,6 +42,10 @@ for f in *; do N4BiasFieldCorrection -d 3 -i $f -o n$f -v; done
 ## Extracción de craneo
 Las imágenes estructurales tomadas en T1 y T2, requieren como etapa previa al procesamiento la extracción del cráneo. Este paso es útil para posteriores estapas como la normalización y el registro. Una de las herramientas con mayor historia es BET de FSL.
 
+**Resultado**
+
+![](img/bet.gif)
+
 ***Videotutorial sobre el uso de BET***
 
 <!-- blank line -->
