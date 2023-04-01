@@ -18,7 +18,7 @@ nav:
     - Anonimizacion: anon.md
     - Conversion NIFTI : dcm2nii.md
     - Conversion BIDS: BIDScon.md
-    - Preprocesamiento: Firststeps.md
+    - Preprocesamiento: preprocesamiento.md
     - fMRI: Funcional_fsl.md
     - About: about.md
 
