@@ -9,7 +9,7 @@ site_description: Manuales de ayuda en procesamiento de Neuroimagenes
 repo_url: https://github.com/pabloreyesg/Scrips-to-MRI
 site_url: https://github.com/pabloreyesg/Scrips-to-MRI/blob/master/docs/index.md
 site_author: Pablo Reyes
-copyright: Copyright &copy; 2021 Pablo Reyes
+copyright: Copyright &copy; 2023 Pablo Reyes
 
 theme: readthedocs
 
