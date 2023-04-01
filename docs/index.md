@@ -113,9 +113,6 @@ Los tipos de análisis sobre imágenes estructurales dependen del objetivo del e
 3. Comparación de grupos
 4. Comparación de casos vs grupo
 
-Tutorial de segmentación manual
-
-
 
 **Principales paquetes de análisis**
 
