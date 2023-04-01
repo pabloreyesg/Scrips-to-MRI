@@ -20,6 +20,7 @@ nav:
     - Conversion BIDS: BIDScon.md
     - Preprocesamiento: preprocesamiento.md
     - fMRI: Funcional_fsl.md
+    - VBM: vbm.md
     - About: about.md
 
 
