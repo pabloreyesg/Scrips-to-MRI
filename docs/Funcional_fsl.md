@@ -44,11 +44,6 @@ FSL tiene una gran ventaja y es su documentación. Allí va a enocntrar todo lo 
 
 9. Análisis de la señal: se realiza el análisis estadístico de la señal de fMRI mediante técnicas como el análisis de la regresión lineal general (GLM) para determinar las áreas cerebrales activadas en respuesta a la tarea o estímulo experimental.
 
-## Preprocesamiento
-En construcción
+## Videotutorial
 
-## Procesamiento de primer nivel
-En construcción
-
-## Procesamiento de segundo nivel
-En construcción
+**En construcción**
