@@ -101,7 +101,7 @@ Existen multiples programas que permiten visualizar imágenes NIFTI, algunos de 
 2. <a href="https://www.mccauslandcenter.sc.edu/mricrogl/">MRIcroGL</a> : Similar al anterior pero enfocado en renderización (3D), también permite sobreponer máscaras y realizar segmentaciones de manera manual.
 3. <a href="http://ric.uthscsa.edu/mango/papaya.html">Papaya</a> : Se trata de un visor basado en JavaScript que permite convertir a otros formatos e incluye algunas formas de preanálisis básicas como segmentación de cráneo.
 
-## Análisis de Neuroimágenes
+## Paquetes principales de análisis
 El análisis de neuroimágenes conlleva al menos tres pasos: 1) preprocesamiento, 2) procesamiento, 3) análisis estadístico. Según el tipo de imagen y software seleccionado se pueden plantear pasos adicionales.
 
 **Imágenes estructurales**

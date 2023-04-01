@@ -57,6 +57,14 @@ Las imágenes estructurales tomadas en T1 y T2, requieren como etapa previa al p
 <!-- blank line -->
 
 ## Registro y normalización
+En el contexto de imágenes médicas, el registro y la transformación de imágenes son procesos importantes para la comparación y fusión de imágenes adquiridas en diferentes momentos, desde diferentes modalidades, o desde diferentes pacientes.
+
+El registro de imágenes médicas se refiere al proceso de alinear y ajustar dos o más imágenes médicas de la misma anatomía o estructura, para que puedan ser comparadas o fusionadas. Esto es especialmente útil cuando se tiene imágenes adquiridas en diferentes momentos o desde diferentes modalidades, lo que puede hacer que las imágenes no se alineen exactamente.
+
+El registro de imágenes médicas puede ayudar en la detección de cambios en la anatomía de un paciente a lo largo del tiempo, en la integración de información de diferentes modalidades de imágenes médicas, como la combinación de imágenes de resonancia magnética (RM) y tomografía por emisión de positrones (PET), y en la planificación de tratamientos quirúrgicos o radioterapéuticos.
+
+Por otro lado, la transformación de imágenes médicas se refiere a la aplicación de una transformación geométrica a una imagen médica para corregir errores de adquisición, mejorar la resolución espacial, ajustar el tamaño y la forma de la imagen, o para alinear la imagen con otras imágenes para su comparación o fusión. Estas transformaciones pueden ser lineales o no lineales, dependiendo de la complejidad del cambio requerido en la imagen. Las transformaciones son un elemento esencial para el siguiente paso que es la normalización
+
 Normalizar puede ser definida como transformar el espacio geométrico de una imagen y llevarla a otro espacio geométrico. Existen dos escenarios en los que se requiere un registro: cuando un participante se le toman varias imágenes en el tiempo y se quiere visualizar las diferencias será necesario tener un proceso de registro entre estos tiempos; cuando se requiere normalizar la imagen de un participante hacia una plantilla o template estandard como el MNI.
 
 **Resultado**
