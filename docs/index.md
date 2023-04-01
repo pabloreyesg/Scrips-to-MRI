@@ -84,14 +84,14 @@ Si usted desea realmente aprender cómo funcionan los análisis de neuroimágene
 No tema preguntar en foros de discusión, aunque previamente revise si ya alguien hizo la misma pregunta (lo cual es muy probable).
 
 ## Visualizadores
-_Dicom_
+**Dicom**
 
 La imágenes salen del scanner en formato DICOM, este formato si bien es útil para transmitir imágenes convservando detalles del paciente y de la máquina; tienen serios problemas para ser manipulados en ambientes de investigación. En general para análisis de neuroimágenes se prefiere covertir estos archivos dicom a NIFTI.
 
 1. <a href="https://www.osirix-viewer.com">Osirix</a> : Visor médico con amplias funcionalidades de imágenes DICOM, solo funciona sobre MAC.
 2. <a href="https://nroduit.github.io/en/">Weasis</a> : Visor médico de acceso libre.
 
-_NifTI_
+**NifTI**
 Existen multiples programas que permiten visualizar imágenes NIFTI, algunos de ellos estan para MATLAB, Python o pueden funcionar de manera independiente.
 
 1. <a href="http://www.itksnap.org/pmwiki/pmwiki.php">ITK-Snap</a> : Visualiza imágenes en diferentes formatos, tanto NIFTI como otras un poco mas antiguas como HDR/IMG, y formatos VTK. Una de sus principales ventajas es la posibilidad de sobreponer máscaras, asi como también realizar segmentaciones de regiones de manera manual o semiautomática.
@@ -101,7 +101,7 @@ Existen multiples programas que permiten visualizar imágenes NIFTI, algunos de 
 ## Análisis de Neuroimágenes
 El análisis de neuroimágenes conlleva al menos tres pasos: 1) preprocesamiento, 2) procesamiento, 3) análisis estadístico. Según el tipo de imagen y software seleccionado se pueden plantear pasos adicionales.
 
-_Imágenes estructurales_
+**Imágenes estructurales**
 Los tipos de análisis sobre imágenes estructurales dependen del objetivo del estudio.
 
 **T1 y T2**
@@ -111,7 +111,6 @@ Los tipos de análisis sobre imágenes estructurales dependen del objetivo del e
 4. Comparación de casos vs grupo
 
 Tutorial de segmentación manual
-
 
 
 
