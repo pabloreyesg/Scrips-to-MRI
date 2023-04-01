@@ -15,6 +15,25 @@ Existen varios software para realizar análisis de neuroimágenes funcionales. P
 ## Insalación de fsl
 FSL tiene una gran ventaja y es su documentación. Allí va a enocntrar todo lo necesario para instalar este programa en sus sitema operativo. Como siempre suelo recomendar prefiero Linux y la versión de Ubuntu. FSL no corre en versiones como Arch ni en versiones como POP!. [Instalación de FSL](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation). Le recomiendo que realice todos los pasos que se incluyen en el manual hasta la configuración del shell.
 
+## Etapas del Procesamiento
+1. Conversión de formatos de archivo: el primer paso es convertir los archivos de imagen de fMRI desde su formato original, como DICOM, al formato de la librería FSL, que es NIfTI.
+
+2. Eliminación de los primeros volúmenes (optativo): los primeros volúmenes de una secuencia fMRI pueden contener artefactos y no ser representativos de la actividad cerebral estable. Por lo tanto, se eliminan de la secuencia para reducir el efecto de los artefactos en el análisis.
+
+3. Corrección de movimiento: los sujetos pueden moverse durante la adquisición de fMRI, lo que introduce artefactos de movimiento en las imágenes. Para corregir esto, se realiza la alineación de todos los volúmenes de la secuencia a un volumen de referencia.
+
+4. Eliminación de ruido: se aplican técnicas de filtrado temporal, como la regresión de los efectos de la señal de los movimientos o la eliminación de las señales de los ventrículos cerebrales y otros tejidos blandos, para eliminar artefactos de ruido de la secuencia de fMRI.
+
+5. Suavizado espacial: se aplica un filtro de suavizado espacial, como la convolución con un núcleo gaussiano, para mejorar la relación señal-ruido de la imagen.
+
+6. Normalización espacial: se aplica una transformación espacial para normalizar las imágenes de fMRI a un espacio estándar, como el espacio de referencia del Montreal Neurological Institute (MNI).
+
+7. Segmentación estructural: se utiliza la imagen estructural T1 de cada sujeto para segmentar las diferentes estructuras cerebrales y crear una máscara de materia gris para su posterior análisis.
+
+8. Creación de modelos de diseño: se crea un modelo de diseño que describe la estructura de los eventos o bloques experimentales que se analizarán.
+
+9. Análisis de la señal: se realiza el análisis estadístico de la señal de fMRI mediante técnicas como el análisis de la regresión lineal general (GLM) para determinar las áreas cerebrales activadas en respuesta a la tarea o estímulo experimental.
+
 ## Tareas o paradigmas
 
 En En la resonancia magnética funcional (fMRI), existen dos tipos de paradigmas principales: los paradigmas de bloque y los paradigmas de evento.
