@@ -1,3 +1,6 @@
+# ¿Por dónde comenzar?
+
+
 ## Recomendaciones generales
 
 Esta página pretende realizar una breve introducción a la manipulación y procesamiento de imágenes médicas, principalmente esta enfocada a neuroimagenes. La idea es poder brindar información sobre aspectos como conversión, anonimización, formato BIDS, y preprocesamiento de imágenes estructurales y funcionales. La página esta en continua actualización y espero ir corrigiendo los errores que vayan saliendo.
