@@ -8,6 +8,7 @@ Este tutorial es desarrollado por Pablo Reyes en su tiempo libre. Si desea contr
 
 
 **Puedes apoyarme**
+
 Si deseas apoyar mi trabajo o tener alguna asesoria extra puedes hacerlo en el siguiente link:
 
 <a href="https://www.buymeacoffee.com/pabloreyesg" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
