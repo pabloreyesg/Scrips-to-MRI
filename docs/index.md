@@ -129,6 +129,6 @@ Los tipos de análisis sobre imágenes estructurales dependen del objetivo del e
 
 
 **Apoya mi trabajo**
-Si deseas apoya mi trabajo o tener alguna asesoria extra puedes hacerlo en el siguiente link:
+Si deseas apoyar mi trabajo o tener alguna asesoria extra puedes hacerlo en el siguiente link:
 
 <a href="https://www.buymeacoffee.com/pabloreyesg" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
