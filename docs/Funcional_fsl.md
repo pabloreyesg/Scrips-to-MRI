@@ -18,6 +18,8 @@ Los paradigmas de evento implican la presentación de estímulos o tareas durant
 
 La elección del paradigma depende del fenómeno que se esté estudiando. Los paradigmas de bloque se utilizan comúnmente para estudiar procesos cognitivos complejos, como la memoria o el procesamiento de lenguaje. Los paradigmas de evento se utilizan a menudo para estudiar procesos sensoriales o motores simples. Ambos paradigmas son herramientas valiosas para estudiar la actividad cerebral relacionada con una tarea específica y se utilizan ampliamente en la investigación en neurociencia cognitiva, psicología y psiquiatría.
 
+![Bloques](img/bloquesfmri.png)
+
 ## Análisis funcionales con fsl
 
 Existen varios software para realizar análisis de neuroimágenes funcionales. Para esta sección hablaré de FSL. Este es un paquete multipropósito; es decir, realiza análisis funcionales también puede realizar otro tipo de análisis como la morfometría basada en voxeles, tractografía, segmentación entre otros.
