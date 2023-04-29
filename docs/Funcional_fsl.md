@@ -53,10 +53,27 @@ FSL tiene una gran ventaja y es su documentación. Allí va a enocntrar todo lo 
 ![Slice Timing](img/slicetiming.png)
 
 ### Realineación
+El paso de realineación en neuroimágenes se refiere a un proceso de preprocesamiento que se realiza en imágenes de resonancia magnética funcional (fMRI) y en imágenes de tomografía por emisión de positrones (PET) para corregir los posibles movimientos que pueda haber realizado el sujeto durante la adquisición de la imagen.
+
+Durante la adquisición de imágenes de fMRI y PET, es común que el sujeto se mueva ligeramente, lo que puede generar artefactos en la imagen y afectar la calidad y la interpretación de los resultados. Por lo tanto, la realineación es un paso crítico que se realiza para corregir estos movimientos.
+
+El proceso de realineación consiste en alinear las imágenes de la secuencia adquirida en cada momento en el que se escanea al sujeto para crear una sola imagen promedio que represente la posición promedio del cerebro del sujeto en relación con el escáner. Para hacer esto, se utiliza un algoritmo de registro que compara cada imagen con la imagen de referencia y ajusta su posición para minimizar las diferencias de posición.
+
+El algoritmo de registro es un conjunto de procedimientos matemáticos y computacionales utilizados para alinear dos o más imágenes que tienen diferencias en su posición, orientación o escala. El objetivo del registro es encontrar la transformación geométrica que mejor alinee las imágenes para que puedan ser superpuestas y comparadas.
+
+El algoritmo de registro funciona al buscar la correspondencia entre características o puntos de referencia comunes en ambas imágenes, como bordes, esquinas o patrones de textura. Luego, se aplica una transformación geométrica a una de las imágenes para que se alinee con la otra. La transformación puede ser una rotación, traslación, escala o deformación no lineal, según las diferencias entre las imágenes.
+
+El proceso de registro es iterativo y se realiza hasta que se alcanza una medida de similitud deseada entre las imágenes, que puede ser la superposición visual, la coincidencia de características específicas o la minimización de la diferencia entre las intensidades de los píxeles.
 
 ![Realineación](img/realing.png)
 
 ### Transformación
+Las transformaciones lineales affine son aquellas que conservan las propiedades de la línea recta, como la paralelismo y la proporción de las distancias. Estas transformaciones son descritas por matrices lineales, que pueden incluir traslaciones, rotaciones, escalas y cortes.
+
+Por otro lado, las transformaciones no lineales son aquellas que no se pueden describir mediante una matriz lineal. En otras palabras, estas transformaciones no conservan la estructura de la línea recta y pueden distorsionar la imagen. Algunos ejemplos de transformaciones no lineales son la distorsión de barril y la distorsión de almohadilla.
+
+La principal diferencia entre las transformaciones lineales affine y las no lineales es que las primeras mantienen la estructura lineal de la imagen, mientras que las segundas pueden deformarla. Además, las transformaciones lineales affine pueden ser descritas de manera precisa mediante una matriz lineal, mientras que las transformaciones no lineales requieren una descripción más compleja, como una función no lineal.
+
 ![Transformación](img/transformar.png)
 
 
