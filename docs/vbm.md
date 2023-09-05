@@ -35,3 +35,8 @@ El toolbox de CAT12 (Computational Anatomy Toolbox 12) es una extensión del sof
 </figure>
 
 <!-- blank line -->
+
+**Apoya mi trabajo**
+Si deseas apoyar mi trabajo o tener alguna asesoria extra puedes hacerlo en el siguiente link:
+
+<a href="https://www.buymeacoffee.com/pabloreyesg" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
