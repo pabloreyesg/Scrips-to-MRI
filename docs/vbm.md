@@ -20,3 +20,18 @@ Una vez que las imágenes han sido normalizadas y suavizadas, se utiliza un mode
 6. Creación de un modelo estadístico: Se crea un modelo estadístico para comparar la densidad o volumen de materia gris o blanca entre diferentes grupos de sujetos o entre diferentes condiciones.
 
 7. Realizar un análisis estadístico: Se realiza un análisis estadístico para identificar las regiones cerebrales que son significativamente diferentes entre los grupos o condiciones.
+
+
+## Toolbox para VBM
+
+El toolbox de CAT12 (Computational Anatomy Toolbox 12) es una extensión del software SPM (Statistical Parametric Mapping) utilizado para el análisis de imágenes cerebrales estructurales, específicamente en VBM (Voxel-Based Morphometry). CAT12 ha sido desarrollado para manejar de manera más eficiente y precisa la segmentación, normalización y análisis estadístico de imágenes de resonancia magnética estructural.
+
+***Videotutorial sobre el uso de CAT12***
+
+<!-- blank line -->
+
+<figure class="video_container">
+  <iframe src="https://www.youtube.com/embed/dyXn_5F4nHQ " width="100%" height="310" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
+
+<!-- blank line -->
