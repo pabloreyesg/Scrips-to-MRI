@@ -7,6 +7,7 @@
 #version         :0.1    
 #usage		 :bash defaceparallel.sh
 #notes           :Install pydeface and parallel in linux, you need a list in txt with the subjects: "lista.txt", establishing a path to BIDS folder, this script only works with T1, if you need more defaces please change it.
+#install    pip install pydeface; sudo apt install parallel
 
 #==============================================================================
 
